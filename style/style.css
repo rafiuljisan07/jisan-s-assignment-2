@@ -70,7 +70,65 @@
     font-weight: 400;
 }
 
+/* plants section styles */
 
+.plants{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.text-title{
+    font-size: 3.125rem;
+    font-weight: 700;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 16px;
+}
+.text-title span{
+    color: #E95A08;
+}
+.plants-description{
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1.37rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 30px;
+    column-gap: 20px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.name{
+    color: #000000;
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+.price{
+    color: #000000;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.card-btn{
+    background-color: #E95A08;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 20px;
+    border: none;
+    margin-top: 10px;
+}
 
 /* responsive styles */
 
@@ -85,5 +143,15 @@
         flex-direction: column-reverse;
         padding-top: 20px;
     }
-    
+    .card-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .card-img{
+        width: 100%;
+    }
+    .plants-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
