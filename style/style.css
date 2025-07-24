@@ -168,6 +168,103 @@
     margin-bottom: 20px;
 }
 
+/* latest section styles */
+.latest{
+    max-width: 1140px;
+    margin: 120px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.latest-title{
+    font-size: 3.125rem;
+    font-weight: 700;
+    color: #000000;
+    text-align: center;
+}
+.latest span{
+     color: #E95A08;
+}
+.latest-description{
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1.37rem;
+    font-weight: 400;
+    text-align: center;
+}
+.latest-img{
+    display: flex;
+    margin-top: 100px;
+    gap: 30px;
+}
+.div-1{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.bloom{
+    background-image: url(../assets/deal-bloom.png);
+    background-size: cover;
+    background-position: center;
+    width: 367px;
+    height: 201px;
+    position: relative;
+    border-radius: 20px;
+}
+.ana{
+    background-image: url(../assets/deal-ana.png);
+    background-size: cover;
+    background-position: center;
+    width: 367px;
+    height: 201px;
+    position: relative;
+    border-radius: 20px;
+}
+.ab-text{
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: white;
+}
+.ab-link{
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+}
+.div-2 {
+    background-image: url(../assets/deal-zabo.png);
+    background-size: cover;
+    background-position: center;
+    width: 755px;
+    height: 425px;
+    position: relative;
+    border-radius: 20px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+}
+.zoba-text{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: white;
+}
+.overlay a{
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: white;
+}
+
 /* join section styles */
 .join{
     width: 100%;
@@ -210,6 +307,47 @@
     padding: 18px 50px;
 
 }
+/* footer section styles */
+.footer{
+    max-width: 1140px;
+    margin: 50px auto;
+    display: flex;
+    gap: 100px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.left{
+    max-width: 360px;
+}
+.footer-description{
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1.37rem;
+    font-weight: 400;
+    margin-top: 20px;
+}
+.middle{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 80px;
+}
+.middle a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 32px;
+}
+.right{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+}
+.logo{
+    width: 100%;
+    height: 100%;
+}
+
 
 /* responsive styles */
 
@@ -260,5 +398,33 @@
     .input input{
         width: 40%;
     }
+    .footer{
+        flex-direction: column;
+        gap: 20px;
+        margin: 50px 10px;
+    }
+    .middle{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .latest{
+        margin: 100px 10px;
+    }
+    .latest-img{
+        flex-direction: column;
+    }
+    .div-2{
+        width: 367px;
+        height: 201px;
+    }
+    .zoba-text{
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: white;
+}
+.overlay a{
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+}
     
 }
