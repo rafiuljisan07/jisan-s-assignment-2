@@ -130,6 +130,41 @@
     margin-top: 10px;
 }
 
+/* plants lover section styles */
+.plants-lover{
+    max-width: 1140px;
+    margin: 200px auto;
+    position: relative;
+
+}
+.sticker{
+    width: 286px;
+    height: 286px;
+    position: absolute;
+    margin-left: 350px;
+    margin-top: -130px;
+}
+.sticker img{
+    width: 100%;
+}
+.lover-container{
+    display: flex;
+    gap: 60px;
+}
+.lover-title{
+    color: #000000;
+    font-size:3.125rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.lover-description{
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1.37rem;
+    font-weight: 400;
+}
+.lover-description li{
+    margin-bottom: 20px;
+}
 /* responsive styles */
 
 @media screen and (max-width: 576px) {
@@ -153,5 +188,14 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+    }
+    .sticker{
+        display: none;
+    }
+    .lover-container{
+        flex-direction: column;
+    }
+    .lover-img{
+        width: 100%;
     }
 }
