@@ -295,7 +295,7 @@
     height: 50px;
     padding-left: 30px;
     color: rgba(0, 0, 0, 0.5);
-    font-size: 1.37rem;
+    font-size: 1.25rem;
     font-weight: 400;
 }
 .join-btn{
@@ -303,8 +303,9 @@
     color: white;
     border: none;
     font-size: 1rem;
-    height: 50px;
-    padding: 18px 50px;
+    font-weight: 600;
+    height: 52px;
+    padding: 15px 50px;
 
 }
 /* footer section styles */
